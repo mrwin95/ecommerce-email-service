@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: email-service
+
+  mail:
+    host: email-smtp.us-east-1.amazonaws.com
+    port: 587
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectionTimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+          ssl: true
+    from: ""
+aws:
+  accessKeyId: ""
+  secretAccessKey: ""
+  region: ap-northeast-1
