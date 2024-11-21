@@ -12,6 +12,7 @@ public class EmailRequest {
     private String subject;
     private String body;
 
+    private String name;
     public EmailRequest(){}
     public EmailRequest(String from, String to, String subject, String body){
         this.from = from;
@@ -50,5 +51,13 @@ public class EmailRequest {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

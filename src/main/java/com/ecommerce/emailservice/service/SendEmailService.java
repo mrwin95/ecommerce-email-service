@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ses.SesClient;
 
+import java.io.IOException;
+
 
 public interface SendEmailService {
     public void sendEmailWithText(EmailRequest emailRequest);
-    public void sendEmailWithHtml(EmailRequest emailRequest);
+    public void sendHtmlEmail(EmailRequest emailRequest) throws IOException;
 
 }

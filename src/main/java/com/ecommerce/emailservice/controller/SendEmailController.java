@@ -25,8 +25,10 @@ public class SendEmailController {
     public ResponseEntity<String> sendTextEmail(@RequestBody EmailRequest emailRequest) throws Exception {
         try{
             logger.info("Send email to: {}", emailRequest.getTo());
-            sendEmailService.sendEmailWithText(emailRequest);
+//            sendEmailService.sendEmailWithText(emailRequest);
+            sendEmailService.sendHtmlEmail(emailRequest);
             return ResponseEntity.ok("Text Email sent successfully");
+
         }catch (Exception e){
             logger.error("Error while sending email", e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failure to send email: "+ e.getMessage());
