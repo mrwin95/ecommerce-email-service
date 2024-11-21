@@ -22,3 +22,9 @@ aws:
   accessKeyId: ""
   secretAccessKey: ""
   region: ap-northeast-1
+
+logging:
+  level:
+    software:
+      amazon:
+        awssdk: DEBUG

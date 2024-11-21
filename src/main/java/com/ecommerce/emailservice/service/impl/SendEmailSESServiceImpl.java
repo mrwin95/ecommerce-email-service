@@ -33,4 +33,9 @@ public class SendEmailSESServiceImpl implements SendEmailService {
         throw  new RuntimeException("Failure sending email", e);
         }
     }
+
+    @Override
+    public void sendEmailWithHtml(EmailRequest emailRequest) {
+        // TODO: unimplemented
+    }
 }

@@ -12,4 +12,9 @@ public class SendEmailJavaSenderServiceImpl implements SendEmailService {
     public void sendEmailWithText(EmailRequest emailRequest) {
 
     }
+
+    @Override
+    public void sendEmailWithHtml(EmailRequest emailRequest) {
+
+    }
 }

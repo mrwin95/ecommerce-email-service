@@ -12,5 +12,6 @@ import software.amazon.awssdk.services.ses.SesClient;
 
 public interface SendEmailService {
     public void sendEmailWithText(EmailRequest emailRequest);
+    public void sendEmailWithHtml(EmailRequest emailRequest);
 
 }
