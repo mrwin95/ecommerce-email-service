@@ -18,10 +18,18 @@ spring:
           writetimeout: 5000
           ssl: true
     from: "q"
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: "otp-group-id"
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+
 aws:
   accessKeyId: ""
   secretAccessKey: ""
   region: ap-northeast-1
+
 
 logging:
   level:

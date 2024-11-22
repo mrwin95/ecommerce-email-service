@@ -13,6 +13,9 @@ public class EmailRequest {
     private String body;
 
     private String name;
+
+    private String otp;
+
     public EmailRequest(){}
     public EmailRequest(String from, String to, String subject, String body){
         this.from = from;
@@ -59,5 +62,13 @@ public class EmailRequest {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getOtp() {
+        return otp;
+    }
+
+    public void setOtp(String otp) {
+        this.otp = otp;
     }
 }
